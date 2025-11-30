@@ -1,0 +1,291 @@
+/*
+  Custom stylesheet for Huzaifa Gujjar's portfolio site.
+  The design uses a dark theme with vibrant accent colors and responsive layouts.
+*/
+
+/*
+  Custom stylesheet for Huzaifa Gujjar's portfolio site.
+  Clean, responsive UI with dark theme + smooth accents.
+*/
+
+:root {
+  --bg: #020617;
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --accent: #6366f1;
+  --text-main: #e5e7eb;
+  --text-muted: #94a3b8;
+  --border: rgba(255, 255, 255, 0.1);
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --radius: 1rem;
+  --max-width: 1120px;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background: var(--bg);
+  color: var(--text-main);
+}
+
+.page-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* ---------------- NAV ---------------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-mark {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: radial-gradient(circle at 30% 20%, var(--accent), #4f46e5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #020617;
+  font-weight: 700;
+  box-shadow: var(--shadow);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 0.85rem;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.hero-content {
+  flex: 1 1 350px;
+}
+
+.hero-image {
+  flex: 1 1 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* ---------------- SERVICES ---------------- */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  transition: 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ---------------- PORTFOLIO ---------------- */
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 1.5rem;
+}
+
+.portfolio-item {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+/* ---------------- CONTACT SECTION ---------------- */
+
+.contact form {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- CUSTOM CONTACT FORM UI --- */
+
+#contact-form {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+#contact-form label {
+  color: #ffdd9b;
+  font-weight: 600;
+}
+
+/* Inputs */
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 14px 18px;
+  background: rgba(173,216,230,0.35);
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  outline: none;
+  transition: 0.3s;
+}
+
+#contact-form textarea {
+  min-height: 120px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  background: rgba(135,206,250,0.55);
+  box-shadow: 0 0 10px rgba(135,206,250,0.8);
+}
+
+/* Contact Button */
+#contact-form button {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 20px;
+  background: linear-gradient(90deg,#5bc0f8,#4fa3e3);
+  border: none;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contact-form button:hover {
+  background: linear-gradient(90deg,#4fa3e3,#5bc0f8);
+  transform: translateY(-2px);
+}
+
+/* ---------------- SOCIAL LINKS (BOTTOM BOXES) ---------------- */
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/* ⭐ NEW WIDE SOCIAL BOXES ⭐ */
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1.2rem 1.4rem;
+  width: 240px;           /* ⭐ WIDER BOX */
+  min-height: 110px;      /* ⭐ TALLER BOX */
+
+  border-radius: 18px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: var(--shadow);
+
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 1rem;
+
+  transition: 0.25s;
+}
+
+.social-link:hover {
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.15);
+}
+
+.social-link span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+  text-align: center;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+.footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  color: var(--text-muted);
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .social-link {
+    width: 100%;
+    max-width: 330px;
+  }
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Huzaifa Gujjar — Blog & Knowledge Base</title>
+  <meta name="description" content="Articles, tutorials and updates from Huzaifa Gujjar on web development and AI projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Reuse the same stylesheet as the landing page -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="logo">
+          <div class="logo-mark">HG</div>
+          <div class="logo-text">
+            <h1>Huzaifa&nbsp;Gujjar</h1>
+            <span>Web &amp; AI Developer</span>
+          </div>
+        </div>
+        <div class="nav-actions">
+          <a href="landing.html#portfolio" class="nav-link">Portfolio</a>
+          <a href="landing.html#services" class="nav-link">Services</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="landing.html#contact" class="btn-primary">Let's&nbsp;talk</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero for blog page -->
+    <section class="blog-hero">
+      <h1>Blog &amp; Knowledge Base</h1>
+      <p>Insights, tutorials and updates from my web and AI projects.</p>
+    </section>
+
+    <!-- Blog list -->
+    <section class="section blog-list">
+      <div class="blog-posts" id="posts">
+        <!-- Posts will be injected here by blog.js -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© <span id="year-blog"></span> Huzaifa Gujjar. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Blog data embedded inline -->
+  <script id="blog-data" type="application/json">
+    {
+      "posts": [
+        {
+          "title": "How I built a modern landing page",
+          "date": "November 25, 2025",
+          "excerpt": "Learn the process of designing a dark-themed landing page with HTML, CSS and JavaScript.",
+          "url": "posts/post1.html"
+        },
+        {
+          "title": "Introduction to AI chatbots and automations",
+          "date": "November 20, 2025",
+          "excerpt": "A beginner-friendly guide to building AI chatbots and automating tasks using Python and modern APIs.",
+          "url": "posts/post2.html"
+        }
+      ]
+    }
+  </script>
+  <script src="blog.js"></script>
+</body>
+</html>

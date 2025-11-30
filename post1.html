@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>How I built a modern landing page – Blog | Huzaifa Gujjar</title>
+  <meta name="description" content="A behind-the-scenes look at building a dark-themed landing page with HTML, CSS and JavaScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="logo">
+          <div class="logo-mark">HG</div>
+          <div class="logo-text">
+            <h1>Huzaifa&nbsp;Gujjar</h1>
+            <span>Web &amp; AI Developer</span>
+          </div>
+        </div>
+        <div class="nav-actions">
+          <a href="../landing.html#portfolio" class="nav-link">Portfolio</a>
+          <a href="../landing.html#services" class="nav-link">Services</a>
+          <a href="../blog.html" class="nav-link">Blog</a>
+          <a href="../landing.html#contact" class="btn-primary">Let's&nbsp;talk</a>
+        </div>
+      </nav>
+    </header>
+    <article class="post">
+      <h1>How I built a modern landing page</h1>
+      <p class="post-meta">Published November 25, 2025</p>
+      <p>In this article I’ll walk through the process of crafting a modern landing page using pure HTML, CSS and a bit of JavaScript. The goal was to build a professional, dark‑themed layout that showcases a portfolio, services and contact form—all while keeping the code lightweight and easy to customize.</p>
+      <p>The first step was to define the structure of the page: a hero section to introduce myself and the value proposition, followed by sections for services, portfolio, a call to action, blog, contact and social links. I chose a dark background with a gradient and used an accent colour to highlight important elements such as buttons and links.</p>
+      <p>For the portfolio and services, I created reusable cards using CSS grid. Each card floats on a semi‑transparent panel with rounded corners and subtle shadows, giving the page depth without feeling heavy. The contact form uses simple styling and a mailto link so visitors can reach me quickly.</p>
+      <p>Finally, I added a responsive navigation bar and ensured the layout adapts gracefully on mobile devices. By defining all colours and sizes in CSS variables, it’s easy to tweak the look and feel across the entire site.</p>
+      <p>If you’re interested in the source code or want help building your own landing page, feel free to <a href="../landing.html#contact" class="blog-read-more">get in touch</a>!</p>
+      <p><a href="../blog.html" class="btn-secondary">← Back to blog</a></p>
+    </article>
+    <footer class="footer">
+      <p>© <span id="year-post1"></span> Huzaifa Gujjar. All rights reserved.</p>
+    </footer>
+  </div>
+  <script>
+    // Set year in footer for this post
+    document.addEventListener('DOMContentLoaded', function() {
+      var y = document.getElementById('year-post1');
+      if (y) y.textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>

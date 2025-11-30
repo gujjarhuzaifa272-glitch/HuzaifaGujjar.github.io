@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Huzaifa Gujjar — Web &amp; AI Developer</title>
+  <meta name="description" content="Portfolio and service page for Huzaifa Gujjar, web &amp; AI developer. Explore my work and reach out to build your next project.">
+  <!-- Preconnect to load Google Fonts faster -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Main font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Site header with logo and navigation -->
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="logo">
+          <div class="logo-mark">HG</div>
+          <div class="logo-text">
+            <h1>Huzaifa&nbsp;Gujjar</h1>
+            <span>Web &amp; AI Developer</span>
+          </div>
+        </div>
+        <div class="nav-actions">
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#services" class="nav-link">Services</a>
+          <!-- Link to the blog page -->
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="#contact" class="btn-primary">Let's&nbsp;talk</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero section introduces the developer and primary call to action -->
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-pill">👋 Hello! I'm Huzaifa</span>
+        <h2 class="hero-title">Building modern websites&nbsp;&amp; AI solutions.</h2>
+        <p class="hero-subtitle">I craft responsive landing pages, dynamic websites and AI‑powered automations that help your business stand out online. With experience in HTML, CSS, JavaScript and AI tools, I can turn your idea into a reality.</p>
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn-primary">See&nbsp;my&nbsp;work</a>
+          <a href="#contact" class="btn-secondary">Hire&nbsp;me</a>
+        </div>
+        <div class="hero-meta">
+          <span>📍 Based in Lahore, Pakistan</span>
+          <span>💼 Available for freelance work</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Illustration loaded from the generated hero image. Keep the filename unchanged to match the asset copied by the build script. -->
+        <img src="hero.png" alt="Developer coding illustration" class="illustration">
+      </div>
+    </section>
+
+    <!-- Services section highlights the core offerings -->
+    <section id="services" class="section services">
+      <div class="section-header">
+        <h2>What I do</h2>
+        <p>I offer a range of services from building beautiful websites to creating AI‑driven chatbots and workflows.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3>Custom Landing Pages</h3>
+          <p>Design and develop responsive landing pages that convert visitors into customers. Focused on performance and user experience.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⚙️</div>
+          <h3>Web Development</h3>
+          <p>Full‑stack web development with HTML, CSS, JavaScript and C++ integration for robust applications and automations.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🤖</div>
+          <h3>AI &amp; Automations</h3>
+          <p>Create AI chatbots and automated workflows tailored to your business processes using Python and AI APIs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio section shows off recent work -->
+    <section id="portfolio" class="section portfolio">
+      <div class="section-header">
+        <h2>Portfolio</h2>
+        <p>A selection of my recent projects. Click to explore live demos and case studies.</p>
+      </div>
+      <div class="portfolio-grid" id="portfolio-grid">
+        <!-- Portfolio items will be injected via JavaScript from data.json -->
+      </div>
+    </section>
+
+    <!-- Call to action section encourages visitors to reach out -->
+    <section class="section cta">
+      <h2>Ready to start your project?</h2>
+      <p>Whether you need a landing page, a web app or AI integration, I'm here to help you succeed. Let's build something amazing together.</p>
+      <a href="#contact" class="btn-primary">Get&nbsp;in&nbsp;touch</a>
+    </section>
+
+    <!-- Blog / Knowledge base section -->
+    <section id="blog" class="section blog">
+      <div class="section-header">
+        <h2>Knowledge Base &amp; Blog</h2>
+        <p>Explore my articles on web development, study tips and AI technologies.</p>
+      </div>
+      <p class="blog-note">Visit my blog: <a href="#" id="blog-url" target="_blank">loading…</a></p>
+    </section>
+
+    <!-- Contact section with form -->
+    <section id="contact">
+  <h2>Contact Me</h2>
+
+  <form id="contact-form">
+    <label for="contact-name">Your name</label>
+    <input
+      type="text"
+      id="contact-name"
+      name="name"
+      placeholder="Your name"
+    />
+
+    <label for="contact-message">Message</label>
+    <textarea
+      id="contact-message"
+      name="message"
+      placeholder="Your message"
+    ></textarea>
+
+    <button type="submit">Send message</button>
+  </form>
+</section>
+
+    <!-- Social links section -->
+    <section class="section socials-section">
+      <div class="section-header">
+        <h2>Let's connect</h2>
+      </div>
+      <div class="socials" id="socials-links">
+        <!-- Social links will be injected from data.json -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© <span id="year"></span> Huzaifa Gujjar. All rights reserved.</p>
+    </footer>
+  </div>
+    <!-- Site data embedded directly so it's available when scripts.js runs.
+         Update the values here to customise your contact info and portfolio. -->
+    <script id="site-data" type="application/json">
+      {
+        "email": "gujjarhuzaifa272@gmail.com",
+        "phone": "+923248579545",
+        "instagram": "https://www.instagram.com/h_z_a_i_f_a_s_l_a_m?igsh=Yno4anF2a2N2bDZi",
+        "whatsapp": "https://wa.me/+923248579545",
+        "blog": "https://huzaifaaslamtechie.blogspot.com",
+        "portfolio": [
+          {"title": "Project 1", "link": "https://link1.com"},
+          {"title": "Project 2", "link": "https://link2.com"},
+          {"title": "Project 3", "link": "https://link3.com"},
+          {"title": "Project 4", "link": "https://link4.com"}
+        ]
+      }
+    </script>
+    <script src="scripts.js"></script>
+    <script>
+  // Contact form -> WhatsApp
+  const form = document.getElementById('contact-form');
+
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // page refresh hone se rokta hai
+
+      const name = document.getElementById('contact-name').value.trim();
+      const message = document.getElementById('contact-message').value.trim();
+
+      //  YAHAN APNA WHATSAPP NUMBER LIKHO (without +)
+      const phoneNumber = '923248579545';
+
+      if (!message) {
+        alert('Please type a message first.');
+        return;
+      }
+
+      const text =
+        `Name: ${name || 'Anonymous'}\n` +
+        `Message: ${message}`;
+
+      const encodedText = encodeURIComponent(text);
+      const url = `https://wa.me/${phoneNumber}?text=${encodedText}`;
+
+      // WhatsApp Web / App open karega
+      window.open(url, '_blank');
+    });
+  }
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contact-form');
+    if (!form) return;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const nameInput = document.getElementById('contact-name');
+      const messageInput = document.getElementById('contact-message');
+
+      const name = nameInput ? nameInput.value.trim() : '';
+      const message = messageInput ? messageInput.value.trim() : '';
+
+      // YAHAN APNA WHATSAPP NUMBER LIKHNA HAI (without +)
+      // Example: 923248597545
+      const phoneNumber = '923248579545';
+
+      if (!message) {
+        alert('Please type a message first.');
+        return;
+      }
+
+      const text =
+        `Name: ${name || 'Anonymous'}\n` +
+        `Message: ${message}`;
+
+      const encodedText = encodeURIComponent(text);
+      const url = `https://wa.me/${phoneNumber}?text=${encodedText}`;
+
+      window.open(url, '_blank');
+    });
+  });
+</script>
+
+</body>
+</html>
